@@ -36,6 +36,7 @@ type SkillType = {
   softwareSkills: SoftwareSkillType[];
 };
 
+
 export type SkillsSectionType = {
   title: string;
   subTitle: string;

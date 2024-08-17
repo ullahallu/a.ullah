@@ -14,7 +14,7 @@ const Greetings = () => {
     <main>
       <div className="position-relative">
         <section className="section section-lg section-shaped pb-250">
-          <div className="shape shape-style-1 bg-gradient-info">
+          <div className="shape shape-style-1" style={{ backgroundColor: "#333333"}}>
             <span />
             <span />
             <span />
@@ -48,7 +48,7 @@ const Greetings = () => {
                   )}
                 </Col>
                 <Col lg="6">
-                  <GreetingLottie animationPath="/lottie/coding.json" />
+                  <GreetingLottie animationPath="/lottie/skills/lottiePG1.json" />
                 </Col>
               </Row>
             </div>
