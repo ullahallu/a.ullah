@@ -14,7 +14,7 @@ const Greetings = () => {
     <main>
       <div className="position-relative">
         <section className="section section-lg section-shaped pb-250">
-          <div className="shape shape-style-1" style={{ backgroundColor: "#333333"}}>
+          <div className="shape shape-style-1" style={{ backgroundColor: "#4682b4" }}>
             <span />
             <span />
             <span />
@@ -30,7 +30,8 @@ const Greetings = () => {
               <Row>
                 <Col lg="6">
                   <h1 className="display-3 text-white">{greetings.title + " "}</h1>
-                  <p className="lead text-white">{greetings.description}</p>
+                  {/* Use greetings-text class here to keep it natural and clean */}
+                  <p className="lead text-white greetings-text">{greetings.description}</p>
                   <SocialLinks />
                   {greetings.resumeLink && (
                     <div className="btn-wrapper my-4">
@@ -53,7 +54,6 @@ const Greetings = () => {
               </Row>
             </div>
           </Container>
-          {/* SVG separator */}
           <div className="separator separator-bottom separator-skew">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,6 @@ const Greetings = () => {
             </svg>
           </div>
         </section>
-        {/* 1st Hero Variation */}
       </div>
     </main>
   );

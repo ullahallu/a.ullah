@@ -8,7 +8,19 @@ const Education = () => {
   return (
     educationInfo && (
       <Fade bottom duration={2000}>
-        <section className="section pb-0 my-5" style={{ backgroundColor: "#333333"}}>
+        <section className="section section-lg section-shaped">
+          {/* Adding the shape structure for bubbles */}
+          <div className="shape shape-style-1" style={{ backgroundColor: "#4682b4" }}>
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
           <Container>
             <div className="d-flex px-3">
               <div>

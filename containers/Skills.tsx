@@ -11,7 +11,8 @@ const Skills = () => {
       <Fade bottom duration={2000}>
         <Container className="text-center my-5 section section-lg">
           <h1 className="h1">{skillsSection.title}</h1>
-          <p className="lead">{skillsSection.subTitle}</p>
+          {/* Apply the about-me-text class here for boxed alignment */}
+          <p className="lead about-me-text">{skillsSection.subTitle}</p>
           {skillsSection.data.map((section, index) => {
             return (
               <Row className="my-5" key={index}>
