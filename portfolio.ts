@@ -36,14 +36,7 @@ export const skillsSection: SkillsSectionType = {
   title: "What I Do",
   subTitle:"With six years in full stack engineering and four years in machine learning research/DevOps, I specialize in building scalable systems and leading cutting-edge AI projects. From enhancing NLP architectures to optimizing CNNs in computer vision, my work bridges practical application and research innovation. As the founder of Boros Laboratories, I focus on assistive technology and healthcare AI, striving to make a meaningful impact. My core expertise spans machine learning, full stack development, CI/CD, cloud infrastructure, and data science—each key to driving the solutions I create. Here is a deeper dive into my skills within these domains:",
   data: [
-    // INIT SECTION JUST FOR RENDER OF LOTTIE
-    {
-      title: null,
-      lottieAnimationFile: null, // Path of Lottie Animation JSON File
-      skills: [],
-      softwareSkills: []
-
-    },
+    
     // Machine Learning 
     { 
       title: "\nMachine Learning Research & Operations ",

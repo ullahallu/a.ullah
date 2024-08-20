@@ -3,7 +3,7 @@ module.exports = {
   images: {
     domains: ["avatars.githubusercontent.com"],
   },
-  output: "standalone",
+  output: "export",
   basePath: '',  // Add this
-  assetPrefix: '/dev-portfolio/',  // Add this
+  assetPrefix: '',  // Add this
 };

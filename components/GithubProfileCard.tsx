@@ -34,7 +34,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
                 <Col lg="8" className="order-lg-1">
                   <h2 className="text-white">Feel Free to Reach Out!</h2>
                   <p className="lead text-white mt-3">
-                    LET'S DISCUSS OPPORTUNITIES FOR PROJECTS, RESEARCH, AND OTHER ENDEAVORS. MY INBOX IS OPEN TO ALL.
+                    LET&apos;S DISCUSS OPPORTUNITIES FOR PROJECTS, RESEARCH, AND OTHER ENDEAVORS. MY INBOX IS OPEN TO ALL.
                   </p>
                   <p className="text-white mt-3">{bio}</p>
                   <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">

@@ -1,7 +1,6 @@
 {
-  "name": "developer-portfolio",
-  "version": "2.0.0",
-  "description": "Developer Portfolio -- Base Code from Hanzla Taqeer",
+  "name": "a.ullah",
+  "version": "1.0.0",
   "main": "index.js",
   "homepage": "https://ullahallu.github.io/",  
   "repository": "https://github.com/ullahallu/dev-portfolio.git",
