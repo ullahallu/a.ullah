@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 const Feedbacks = () => {
   return (
     feedbacks && (
-      <Fade bottom duration={2000}>
+      <Fade bottom duration={800}>
         <section className="section section-lg">
           <Container>
             <div className="d-flex p-4">

@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 const Education = () => {
   return (
     educationInfo && (
-      <Fade bottom duration={2000}>
+      <Fade bottom duration={800}>
         <section className="section section-lg section-shaped">
           {/* Adding the shape structure for bubbles */}
           <div className="shape shape-style-1" style={{ backgroundColor: "#4682b4" }}>

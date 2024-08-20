@@ -40,10 +40,10 @@ const Greetings = () => {
                         color="default"
                         href={greetings.resumeLink}
                       >
-                        <span className="btn-inner--icon mr-1">
+                        <span className="btn-inner--icon mr-1 text-info">
                           <i className="fa fa-file" />
                         </span>
-                        <span className="btn-inner--text">See My Resume</span>
+                        <span className="btn-inner--text text-info">See My Resume</span>
                       </Button>
                     </div>
                   )}

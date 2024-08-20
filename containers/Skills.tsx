@@ -8,7 +8,7 @@ import { skillsSection } from "../portfolio";
 const Skills = () => {
   return (
     skillsSection && (
-      <Fade bottom duration={2000}>
+      <Fade bottom duration={1200}>
         <Container className="text-center my-5 section section-lg">
           <h1 className="h1">{skillsSection.title}</h1>
           {/* Apply the about-me-text class here for boxed alignment */}
