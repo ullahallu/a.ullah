@@ -4,4 +4,6 @@ module.exports = {
     domains: ["avatars.githubusercontent.com"],
   },
   output: "standalone",
+  basePath: '',  // Add this
+  assetPrefix: '/dev-portfolio/',  // Add this
 };
