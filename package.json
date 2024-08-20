@@ -3,13 +3,13 @@
   "version": "2.0.0",
   "description": "Developer Portfolio -- Base Code from Hanzla Taqeer",
   "main": "index.js",
-  "homepage": "https://ullahallu.github.io/",  // This points to your GitHub Pages root
+  "homepage": "https://ullahallu.github.io/",  
   "repository": "https://github.com/ullahallu/dev-portfolio.git",
   "author": "Ahmed Ullah",
   "license": "MIT",
   "scripts": {
     "predeploy": "next build && next export",
-    "deploy": "gh-pages -d out",  // Deploying the 'out' directory
+    "deploy": "gh-pages -d out", 
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
