@@ -637,8 +637,8 @@ export const seoData: SEODataType = {
   title: "Ahmed Ullah",
   description: greetings.description,
   author: "Ahmed Ullah",
-  image: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  url: "https://ullahallu.github.io",
+  image: "ahmedpicture.png",
+  url: "a-ullah.vercel.app",
   keywords: [
     "Ahmed",
     "Ahmed Ullah",
