@@ -13,7 +13,7 @@ const Greetings = () => {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-250" style={{paddingTop: "50px", paddingBottom: "0px", marginBottom: "5px" }}>
+        <section className="section section-lg section-shaped pb-250" style={{paddingTop: "150px", paddingBottom: "0px", marginBottom: "50px" }}>
           <div className="shape shape-style-1" style={{ backgroundColor: "#4682b4" }}>
             <span />
             <span />
