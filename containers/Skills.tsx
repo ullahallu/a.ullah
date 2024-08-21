@@ -1,54 +1,66 @@
-import { Icon } from "@iconify/react";
-import React, { Fragment } from "react";
+import React from "react";
+import { SkillBars } from "../portfolio";
+import { Container, Row, Progress, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
-import { Col, Container, Row, UncontrolledTooltip } from "reactstrap";
-import DisplayLottie from "../components/DisplayLottie";
-import { skillsSection } from "../portfolio";
 
 const Skills = () => {
+  const midpoint = Math.ceil(SkillBars.length / 2);
+  const leftSkills = SkillBars.slice(0, midpoint);
+  const rightSkills = SkillBars.slice(midpoint);
+
   return (
-    skillsSection && (
-      <Fade bottom duration={1200}>
-        <Container className="text-center my-5 section section-lg">
-          <h1 className="h1">{skillsSection.title}</h1>
-          {/* Apply the about-me-text class here for boxed alignment */}
-          <p className="lead about-me-text">{skillsSection.subTitle}</p>
-          {skillsSection.data.map((section, index) => {
-            return (
-              <Row className="my-5" key={index}>
-                <Col lg="6" className="order-2 order-lg-1">
-                  <DisplayLottie animationPath={section.lottieAnimationFile} />
-                </Col>
-                <Col lg="6" className="order-1 order-lg-2">
-                  <h3 className="h3 mb-2">{section.title}</h3>
-                  <div className="d-flex justify-content-center flex-wrap mb-2">
-                    {section.softwareSkills.map((skill, i) => {
-                      return (
-                        <Fragment key={i}>
-                          <div
-                            className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, "")}
-                          >
-                            <Icon icon={skill.iconifyTag} data-inline="false"></Icon>
-                          </div>
-                          <UncontrolledTooltip delay={0} placement="bottom" target={skill.skillName.replace(/\s/g, "")}>
-                            {skill.skillName}
-                          </UncontrolledTooltip>
-                        </Fragment>
-                      );
-                    })}
+    SkillBars && (
+      <Container className="section section-lg" style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <Fade bottom duration={500}>
+          <Row className="text-center mb-4">
+            <Col>
+              <h4 className="display-4">Skills</h4>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col lg="6">
+              {leftSkills.map((skill) => (
+                <div className="progress-info" key={skill.Stack}>
+                  <div className="progress-label">
+                    <span>{skill.Stack}</span>
                   </div>
-                  <div>
-                    {section.skills.map((skill, i) => {
-                      return <p key={i}>{skill}</p>;
-                    })}
+                  <div className="progress-percentage">
+                    <span>{skill.progressPercentage}%</span>
                   </div>
-                </Col>
-              </Row>
-            );
-          })}
-        </Container>
-      </Fade>
+                  <Progress
+                    max="100"
+                    value={skill.progressPercentage}
+                    color="info"
+                    role="progressbar"
+                    aria-label={skill.Stack}
+                  />
+                </div>
+              ))}
+            </Col>
+
+            <Col lg="6">
+              {rightSkills.map((skill) => (
+                <div className="progress-info" key={skill.Stack}>
+                  <div className="progress-label">
+                    <span>{skill.Stack}</span>
+                  </div>
+                  <div className="progress-percentage">
+                    <span>{skill.progressPercentage}%</span>
+                  </div>
+                  <Progress
+                    max="100"
+                    value={skill.progressPercentage}
+                    color="info"
+                    role="progressbar"
+                    aria-label={skill.Stack}
+                  />
+                </div>
+              ))}
+            </Col>
+          </Row>
+        </Fade>
+      </Container>
     )
   );
 };
