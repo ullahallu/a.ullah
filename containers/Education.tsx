@@ -8,7 +8,7 @@ const Education = () => {
   return (
     educationInfo && (
       <Fade bottom duration={500}>
-        <section className="section section-lg section-shaped" style={{ paddingTop: "10px", paddingBottom: "10px" }}>
+        <section className="section section-lg section-shaped">
           {/* Adding the shape structure for bubbles */}
           <div className="shape shape-style-1" style={{ backgroundColor: "#4682b4" }}>
             <span />
@@ -22,20 +22,20 @@ const Education = () => {
             <span />
           </div>
           <Container>
-            <div className="d-flex px-2">
+            <div className="d-flex px-3">
               <div>
                 <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
                   <i className="ni ni-books text-info" />
                 </div>
               </div>
-              <div className="pl-3">
-                <h4 className="display-4 text-white">Education</h4>
+              <div className="pl-4">
+                <h4 className="display-3 text-white">Education</h4>
               </div>
             </div>
             <Row className="row-grid align-items-center">
               {educationInfo.map(info => {
                 return (
-                  <Col className="order-lg-1" lg="6" key={info.schoolName} style={{ marginBottom: "5px" }}>
+                  <Col className="order-lg-1" lg="6" key={info.schoolName}>
                     <EducationCard {...info} />
                   </Col>
                 );
