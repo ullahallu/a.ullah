@@ -20,7 +20,7 @@ const Projects = () => {
                 <h4 className="display-4 text-info">Projects</h4>
               </div>
             </div>
-            <Row className="row-grid align-items-center" style={{ marginBottom: "5px" }}>
+            <Row className="row-grid align-items-center" style={{ marginBottom: "0px" }}>
               {projects.map((data, i) => {
                 return <ProjectsCard key={i} {...data} />;
               })}
