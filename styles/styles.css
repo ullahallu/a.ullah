@@ -1,84 +1,19 @@
-/* General page settings */
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-/* Ensuring all containers are centered and responsive */
-.container {
-  max-width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-/* Fixing white column issue */
-body > div:first-child {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 /* About Me section: Boxed text alignment */
 .about-me-text {
   text-align: justify;
   text-justify: inter-word;
   margin: 0 auto;
-  max-width: 85%;
-  line-height: 1.7;
+  max-width: 85%; /* Adjust this value for the boxed width */
+  line-height: 1.7; /* Improves readability */
 }
 
-/* Greetings section: Natural text alignment */
+/* For the initial Greetings section: Natural text alignment */
 .greetings-text {
   text-align: left;
   margin: 0;
   line-height: 1.8;
 }
 
-/* Responsive styling for skills and projects sections */
-.skills-section, .projects-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skills-section .skill-item, .projects-section .project-item {
-  flex: 1 1 100%; /* Mobile: full width */
-  max-width: 100%;
-  margin: 10px 0;
-}
-
-/* Tablet view: two-column layout */
-@media (min-width: 768px) {
-  .skills-section .skill-item, .projects-section .project-item {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-}
-
-/* Desktop view: three-column layout */
-@media (min-width: 1200px) {
-  .skills-section .skill-item, .projects-section .project-item {
-    flex: 1 1 30%;
-    max-width: 30%;
-  }
-}
-
-/* Prevents overflow from any elements */
-* {
-  box-sizing: border-box;
-}
-
-/* Ensures images, videos, etc. are responsive */
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Fixing padding/margin issues for all elements */
-* {
-  padding: 0;
-  margin: 0;
+body > div:first-child {
+  overflow-x: hidden;
 }
