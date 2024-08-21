@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     experience && (
       <Fade bottom duration={500}>
-        <section className="section section-lg">
+        <section className="section section-lg" style={{paddingTop: "0px", paddingBottom: "0px", marginBottom: "5px" }}>
           <Container>
             <div className="d-flex p-4">
               <div>
