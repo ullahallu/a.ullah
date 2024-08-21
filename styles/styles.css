@@ -1,19 +1,77 @@
+/* General container settings for mobile and desktop */
+body > div:first-child {
+  overflow-x: hidden;
+}
+
 /* About Me section: Boxed text alignment */
 .about-me-text {
   text-align: justify;
-  text-justify: inter-word;
   margin: 0 auto;
   max-width: 85%; /* Adjust this value for the boxed width */
   line-height: 1.7; /* Improves readability */
 }
 
-/* For the initial Greetings section: Natural text alignment */
+/* Greetings section: Natural text alignment */
 .greetings-text {
   text-align: left;
   margin: 0;
   line-height: 1.8;
 }
 
-body > div:first-child {
-  overflow-x: hidden;
+/* Skills and Projects section visibility on mobile */
+.skills-section, .projects-section {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-width: 100%;
+  padding: 0 20px; /* Adds some padding on smaller screens */
+}
+
+/* Ensure child elements within skills and projects sections are visible */
+.skills-section *, .projects-section * {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Container sizes and layout adjustments for mobile */
+@media (max-width: 768px) {
+  .skills-section .skill-item, .projects-section .project-item {
+    flex: 1 1 100%; /* Force full width on mobile */
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Adjust font sizes for better readability on mobile */
+  .skills-section h3, .projects-section h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Center text alignment for better mobile readability */
+  .greetings-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+/* Fallback for smaller mobile devices (like iPhone SE) */
+@media (max-width: 480px) {
+  .skills-section, .projects-section {
+    padding: 0 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Adjust card sizes and font for better readability */
+  .skills-section .skill-item, .projects-section .project-item {
+    margin-bottom: 20px;
+    text-align: center; /* Center-align text for better mobile display */
+  }
+
+  /* Adjust the About Me text for smaller screens */
+  .about-me-text {
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+  }
 }
