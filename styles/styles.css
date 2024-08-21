@@ -1,8 +1,3 @@
-/* General container settings for mobile and desktop */
-body > div:first-child {
-  overflow-x: hidden;
-}
-
 /* About Me section: Boxed text alignment */
 .about-me-text {
   text-align: justify;
@@ -19,66 +14,6 @@ body > div:first-child {
   line-height: 1.8;
 }
 
-/* Skills and Projects section visibility on mobile */
-.skills-section, .projects-section {
-  display: block !important; /* Ensures they are visible */
-  opacity: 1 !important; /* Removes any accidental opacity */
-  visibility: visible !important;
-  max-width: 100%;
-  padding: 0 20px; /* Adds some padding on smaller screens */
-}
-
-/* Force all child elements within skills and projects sections to be visible */
-.skills-section *, .projects-section * {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Ensure container sizes adjust correctly on mobile */
-@media (max-width: 768px) {
-  .skills-section .skill-item, .projects-section .project-item {
-    flex: 1 1 100%; /* Force full width on mobile */
-    max-width: 100%;
-    margin: 10px 0;
-  }
-
-  /* Adjust font sizes for better readability on mobile */
-  .skills-section h3, .projects-section h3 {
-    font-size: 1.2rem;
-  }
-}
-
-/* Fallback for smaller mobile devices (like iPhone SE) */
-@media (max-width: 480px) {
-  .skills-section, .projects-section {
-    padding: 0 10px;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Adjust card sizes and font for better readability */
-  .skills-section .skill-item, .projects-section .project-item {
-    margin-bottom: 20px;
-    text-align: center; /* Center-align text for better mobile display */
-  }
-}
-
-/* Global responsive adjustments */
-@media (max-width: 768px) {
-  /* Ensure greetings section aligns well */
-  .greetings-text {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-}
-
-/* Other optional mobile tweaks */
-@media (max-width: 480px) {
-  .about-me-text {
-    max-width: 100%;
-    padding: 0 10px;
-    text-align: justify;
-  }
+body > div:first-child {
+  overflow-x: hidden;
 }
