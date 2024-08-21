@@ -28,6 +28,11 @@ body > div:first-child {
   margin: 0 auto;
 }
 
+/* Reduce the space between sections */
+section {
+  margin-bottom: 20px; /* Adjust this value to control space between sections */
+}
+
 /* Ensure container sizes adjust correctly on mobile */
 @media (max-width: 768px) {
   .skills-section, .projects-section {
@@ -86,4 +91,17 @@ body {
 .skills-section, .projects-section {
   overflow-x: hidden;
   padding-bottom: 20px;
+}
+
+/* Adjust global section padding and margin */
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Reduce heading margins */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
