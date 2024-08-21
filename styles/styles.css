@@ -9,14 +9,14 @@ body > div:first-child {
   text-justify: inter-word;
   margin: 0 auto;
   max-width: 85%;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* For the initial Greetings section: Natural text alignment */
 .greetings-text {
   text-align: left;
   margin: 0;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 /* Skills and Projects section visibility on mobile */
@@ -24,39 +24,55 @@ body > div:first-child {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
-  max-width: 100%;
-  padding: 10px 20px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-/* Force all child elements within skills and projects sections to be visible */
-.skills-section *, .projects-section * {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Responsive adjustments for Skills and Projects */
+/* Ensure container sizes adjust correctly on mobile */
 @media (max-width: 768px) {
   .skills-section, .projects-section {
     padding: 0 10px;
   }
+
+  /* Force full-width compact layout for skill items and projects */
   .skills-section .skill-item, .projects-section .project-item {
     flex: 1 1 100%;
     max-width: 100%;
     margin: 10px 0;
+    padding: 5px;
+  }
+
+  /* Adjust font sizes and compact elements */
+  .skills-section h3, .projects-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .skills-section, .projects-section {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fallback for very small mobile devices (like iPhone SE) */
+@media (max-width: 480px) {
+  .skills-section, .projects-section {
+    padding: 0 5px;
+  }
+
+  .skills-section .skill-item, .projects-section .project-item {
+    padding: 3px;
     text-align: center;
   }
 }
 
-/* Improve layout and spacing for very small screens */
-@media (max-width: 480px) {
-  .skills-section, .projects-section {
-    padding: 0 5px;
-    margin: 0 auto;
-  }
-  .skills-section .skill-item, .projects-section .project-item {
-    margin-bottom: 20px;
-  }
+/* Global compact styling */
+body {
+  font-size: 14px;
+}
+
+.skills-section .skill-item, .projects-section .project-item {
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 /* Ensure visibility of all nested elements */
@@ -66,21 +82,8 @@ body > div:first-child {
   visibility: visible;
 }
 
-/* Handle potential overflow and scrolling issues on mobile */
+/* Handling overflow and spacing */
 .skills-section, .projects-section {
   overflow-x: hidden;
-}
-
-/* Additional mobile adjustments */
-@media (max-width: 768px) {
-  .greetings-text {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  .about-me-text {
-    max-width: 100%;
-    padding: 0 10px;
-    text-align: justify;
-  }
+  padding-bottom: 20px;
 }

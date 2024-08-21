@@ -1,10 +1,11 @@
+import dynamic from "next/dynamic";
 import Navigation from "../components/Navigation";
 import Greetings from "../containers/Greetings";
-import Skills from "../containers/Skills";
+const Skills = dynamic(() => import("../containers/Skills"), { ssr: false });
+const Projects = dynamic(() => import("../containers/Projects"), { ssr: false });
 import Proficiency from "../containers/Proficiency";
 import Education from "../containers/Education";
 import Experience from "../containers/Experience";
-import Projects from "../containers/Projects";
 import Feedbacks from "../containers/Feedbacks";
 import GithubProfileCard from "../components/GithubProfileCard";
 import { openSource } from "../portfolio";
