@@ -1,10 +1,15 @@
+/* General container settings for mobile and desktop */
+body > div:first-child {
+  overflow-x: hidden;
+}
+
 /* About Me section: Boxed text alignment */
 .about-me-text {
   text-align: justify;
   text-justify: inter-word;
   margin: 0 auto;
-  max-width: 85%; /* Adjust this value for the boxed width */
-  line-height: 1.7; /* Improves readability */
+  max-width: 85%;
+  line-height: 1.7;
 }
 
 /* For the initial Greetings section: Natural text alignment */
@@ -14,6 +19,68 @@
   line-height: 1.8;
 }
 
-body > div:first-child {
+/* Skills and Projects section visibility on mobile */
+.skills-section, .projects-section {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  max-width: 100%;
+  padding: 10px 20px;
+}
+
+/* Force all child elements within skills and projects sections to be visible */
+.skills-section *, .projects-section * {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive adjustments for Skills and Projects */
+@media (max-width: 768px) {
+  .skills-section, .projects-section {
+    padding: 0 10px;
+  }
+  .skills-section .skill-item, .projects-section .project-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Improve layout and spacing for very small screens */
+@media (max-width: 480px) {
+  .skills-section, .projects-section {
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+  .skills-section .skill-item, .projects-section .project-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ensure visibility of all nested elements */
+.skills-section *, .projects-section * {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Handle potential overflow and scrolling issues on mobile */
+.skills-section, .projects-section {
   overflow-x: hidden;
+}
+
+/* Additional mobile adjustments */
+@media (max-width: 768px) {
+  .greetings-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .about-me-text {
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: justify;
+  }
 }
