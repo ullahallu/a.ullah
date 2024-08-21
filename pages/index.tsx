@@ -1,15 +1,12 @@
-import dynamic from "next/dynamic";
-import Head from "next/head"; // Import Head to manage meta tags
-
-const Navigation = dynamic(() => import("../components/Navigation"));
-const Greetings = dynamic(() => import("../containers/Greetings"));
-const Skills = dynamic(() => import("../containers/Skills"));
-const Proficiency = dynamic(() => import("../containers/Proficiency"));
-const Education = dynamic(() => import("../containers/Education"));
-const Experience = dynamic(() => import("../containers/Experience"));
-const Projects = dynamic(() => import("../containers/Projects"));
-const Feedbacks = dynamic(() => import("../containers/Feedbacks"));
-const GithubProfileCard = dynamic(() => import("../components/GithubProfileCard"));
+import Navigation from "../components/Navigation";
+import Greetings from "../containers/Greetings";
+import Skills from "../containers/Skills";
+import Proficiency from "../containers/Proficiency";
+import Education from "../containers/Education";
+import Experience from "../containers/Experience";
+import Projects from "../containers/Projects";
+import Feedbacks from "../containers/Feedbacks";
+import GithubProfileCard from "../components/GithubProfileCard";
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
 import { GithubUserType } from "../types";
@@ -17,12 +14,7 @@ import { GithubUserType } from "../types";
 export default function Home({ githubProfileData }: { githubProfileData: any }) {
   return (
     <div>
-      {/* SEO component and custom meta tags */}
       <SEO />
-      <Head>
-        {/* Ensure mobile responsiveness */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
       <Navigation />
       <Greetings />
       <Skills />
