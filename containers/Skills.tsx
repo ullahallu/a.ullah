@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     skillsSection && (
       <Fade bottom duration={500}>
-        <Container className="text-center my-5 section section-lg" style={{paddingTop: "0px", paddingBottom: "0px", marginBottom: "100px" }}>
+        <Container className="text-center my-5 section section-lg" style={{paddingTop: "50px", paddingBottom: "100px", marginBottom: "100px" }}>
           <h1 className="h1">{skillsSection.title}</h1>
           {/* Apply the about-me-text class here for boxed alignment */}
           <p className="lead about-me-text">{skillsSection.subTitle}</p>

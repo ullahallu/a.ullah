@@ -8,7 +8,7 @@ const Feedbacks = () => {
   return (
     feedbacks && (
       <Fade bottom duration={500}>
-        <section className="section section-lg" style={{paddingTop: "0px", paddingBottom: "0px", marginBottom: "5px" }}>
+        <section className="section section-lg" style={{paddingTop: "100px", paddingBottom: "100px", marginBottom: "100px" }}>
           <Container>
             <div className="d-flex p-4">
               <div>
