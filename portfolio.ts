@@ -496,7 +496,7 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: "Founder | CEO | Machine Learning Researcher",
+    role: "Founder | CEO | Lead Machine Learning Researcher",
     company: "Boros Laboratories",
     companyLogo: "/img/icons/common/BOROS002.png",
     date: "November 2021 - Present",
@@ -510,7 +510,7 @@ export const experience: ExperienceType[] = [
     ],
   },
   {
-    role: "Co-Founder | Machine Learning Researcher",
+    role: "Co-Founder | Lead Machine Learning Researcher",
     company: "AI Healthcare Stealth Startup",
     companyLogo: "/img/icons/common/stealth.jpg",
     date: "August 2024 - Present",
