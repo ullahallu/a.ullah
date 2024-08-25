@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     projects && (
       <Fade bottom duration={500}>
-        <section className="section section-lg" style={{paddingTop: "10px", paddingBottom: "10px", marginBottom: "10px" }}>
+        <section className="section section-lg" style={{paddingTop: "50px", paddingBottom: "10px", marginBottom: "10px" }}>
           <Container>
             <div className="d-flex p-2">
               <div>
