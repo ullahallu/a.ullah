@@ -11,8 +11,8 @@ const Proficiency = () => {
 
   return (
     SkillBars && (
-      <Container className="section section-lg" style={{paddingTop: "150px", paddingBottom: "150px", marginBottom: "150px" }}>
-        <Fade bottom duration={500}>
+      <Container className="section section-lg">
+        <Fade bottom duration={800}>
           {/* Title Section */}
           <Row className="text-center mb-5">
             <Col>
