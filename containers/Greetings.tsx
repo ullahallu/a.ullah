@@ -38,7 +38,7 @@ const Greetings = () => {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
-                        href="/public/resume.pdf"
+                        href="https://drive.google.com/file/d/1OL3EGuV6fEOZdhTZY3yY3opYqAXDvKJ1/view?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
