@@ -485,8 +485,8 @@ export const educationInfo: EducationType[] = [
     descBullets: [], // Array of Strings
   },
   {
-    schoolName: "University of Michigan - Ann Arbor",
-    subHeader: "Masters in Computer Science - Machine Learning",
+    schoolName: "The University of Texas at Arlington",
+    subHeader: "PhD in Computer Science - Machine Learning",
     duration: "August 2025 - Present",
     desc: "In Progress",
     grade: "N/A",
