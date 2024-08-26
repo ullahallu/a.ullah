@@ -2,8 +2,8 @@
   "name": "a.ullah",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://ullahallu.github.io/",  
-  "repository": "https://github.com/ullahallu/dev-portfolio.git",
+  "homepage": "https://a-ullah.vercel.app",  
+  "repository": "https://github.com/ullahallu/a.ullah.git",
   "author": "Ahmed Ullah",
   "license": "MIT",
   "scripts": {
