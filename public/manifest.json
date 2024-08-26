@@ -4,12 +4,12 @@
   "description": "A passionate Machine Learning Researcher and Full Stack Engineer.",
   "icons": [
     {
-      "src": "./signature.png",
+      "src": "./public/signature.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./signature.png",
+      "src": "./public/signature.png",
       "type": "image/png",
       "sizes": "512x512"
     }
