@@ -16,7 +16,7 @@ export const greetings: GreetingsType = {
   title: "Hi I'm Ahmed :)",
   description:
     "A passionate software engineer and researcher with an unwavering commitment to creating sustainable and scalable solutions in machine learning and full stack development. I strive to continually learn and grow, aiming to contribute meaningfully to the machine learning community.",
-  resumeLink: "https://drive.google.com/file/d/1bZGQmeSDz5JySOYBcx4dKQHi5fNSYVYE/view?usp=drive_link",
+  resumeLink: "https://github.com/ullahallu/ahmedullahresume/blob/main/ahmedullahresumeMASTER.pdf",
 };
 
 export const openSource = {
