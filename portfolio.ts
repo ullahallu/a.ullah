@@ -500,7 +500,7 @@ export const experience: ExperienceType[] = [
     company: "Boros Laboratories",
     companyLogo: "/img/icons/common/BOROS002.png",
     date: "November 2021 - Present",
-    desc: "Leading a hive mind of innovative researchers and engineers to develop Assistive Technologies",
+    desc: "Leading an innovative team of researchers and engineers to develop Assistive Technologies",
     descBullets: [
     	"Pioneering Assistive Technologies: Focused on creating cutting-edge AI solutions for individuals with disabilities, enhancing accessibility and independence through machine learning innovations.",
      	"AI in Healthcare: Collaborating with leading institutions to advance AI-driven healthcare applications, particularly in diagnostic tools and patient care systems.",
@@ -615,7 +615,7 @@ export const feedbacks: FeedbackType[] = [
     name: "Steven Culwell",
     role: "Senior Full Stack Engineer",
     feedback:
-      "Working with Ahmed has been a highlight in my career. His approach to building, fine-tuning, and deploying machine learning models is both strategic and innovative. What impressed me the most was his ability to seamlessly integrate these models into complex systems, ensuring everything works harmoniously. Ahmed is always open to feedback, quick to offer solutions, and incredibly focused on achieving the best possible results. His blend of technical skills, strategic thinking, and team collaboration is something every organization could benefit from.",
+      "Ahmed's approach to building, fine-tuning, and deploying machine learning models is both strategic and innovative. What impressed me the most was his ability to seamlessly integrate these models into complex systems, ensuring everything works harmoniously. Ahmed is always open to feedback, quick to offer solutions, and incredibly focused on achieving the best possible results. His blend of technical skills, strategic thinking, and team collaboration is something every organization could benefit from.",
   },
   {
     name: "Isaac Hietmann",
