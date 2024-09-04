@@ -38,7 +38,7 @@ const Greetings = () => {
                       <Button
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
-                        href="https://drive.google.com/file/d/1OL3EGuV6fEOZdhTZY3yY3opYqAXDvKJ1/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1jKtz7hHxlasy8CLfSAYJCuu0HoA3galS/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
