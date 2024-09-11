@@ -516,10 +516,10 @@ export const experience: ExperienceType[] = [
     date: "August 2024 - Present",
     desc: "Leading the development of specialized AI models to enhance medical documentation efficiency, with a focus on scalable, real-time clinical solutions.",
     descBullets: [
-    	"Fine-Tuning MedicalBERT for Clinical Summaries: Leading the adaptation and optimization of MedicalBERT to accurately summarize patient notes across multiple medical specialties.",
+    	"Fine-Tuning Med-BERT for Clinical Summaries: Leading the adaptation and optimization of Med-BERT to accurately summarize patient notes across multiple medical specialties.",
      	"Data Curation and Preprocessing: Managing the acquisition and preprocessing of medical datasets (e.g., MIMIC-III, i2b2) to enhance model training, including tokenization and domain-specific text cleaning.",
      	"Efficient Local GPU Cluster Setup: Designing and deploying a cost-effective local GPU cluster using RTX 4090s for rapid model training and inference, significantly reducing cloud costs.",
-     	"Advanced Model Training and Optimization: Implementing techniques like mixed-precision training and distributed processing to fine-tune MedicalBERT for high-accuracy medical text generation.",
+     	"Advanced Model Training and Optimization: Implementing techniques like mixed-precision training and distributed processing to fine-tune Med-BERT for high-accuracy medical text generation.",
       "Scalable and Secure Model Deployment: Building containerized solutions using Docker and Kubernetes, integrating a FastAPI interface for seamless and scalable predictions.",
       "Strategic Co-Founder Involvement: Driving discussions on technical roadmaps, equity division, and funding strategies, while aligning the MVP with future integration goals like EMR compatibility (e.g., Epic, Cerner).",
       "Long-Term Vision in AI and Research: Balancing my role as a technical lead with a commitment to future industry research, aiming to bridge cutting-edge AI solutions with practical healthcare applications.",
@@ -561,7 +561,7 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
-    name: "Tortoise: An Assistive Smart Glasses System for People with Memory Loss Conditions",
+    name: "Tortoise: An Assistive System for People with Memory Loss",
     desc: "Tortoise is an innovative wearable technology developed by Boros Laboratories in collaboration with UTA research, designed to offer life-changing support for individuals with Alzheimer’s and dementia. This cutting-edge system aims to assist patients in recognizing familiar faces and objects, enhancing their ability to navigate daily life with greater independence. By leveraging advanced machine learning techniques and a carefully designed user interface, Tortoise is focused on providing seamless and reliable assistance to users, contributing to improved quality of life. Currently in the beta testing stage, Tortoise is set to be showcased at the AI in Health Conference 2025, where its groundbreaking potential in the field of assistive healthcare will be demonstrated.",
     github: "https://github.com/ullahallu/Tortoise",
     link: "https://www.youtube.com/watch?v=boJyhVIbEaA",
